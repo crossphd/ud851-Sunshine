@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapterOn
 
     private ProgressBar mLoadingIndicator;
 
+    private Toast toast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -121,7 +123,10 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapterOn
     @Override
     public void onClick(String weatherForDay) {
         Context context = this;
-        Toast.makeText(context, weatherForDay, Toast.LENGTH_SHORT)
+        if(toast != null){
+            toast.cancel();
+        }
+        toast.makeText(context, weatherForDay, Toast.LENGTH_SHORT)
                 .show();
     }
 
