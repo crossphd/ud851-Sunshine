@@ -35,7 +35,6 @@ public class WeatherDbHelper extends SQLiteOpenHelper {
      */
     public static final String DATABASE_NAME = "weather.db";
 
-//  COMPLETED (13) Create a private static final int called DATABASE_VERSION and set it to 1
     /*
      * If you change the database schema, you must increment the database version or the onUpgrade
      * method will not be called.

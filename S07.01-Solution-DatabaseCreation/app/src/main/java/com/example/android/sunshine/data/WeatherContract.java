@@ -53,7 +53,6 @@ public class WeatherContract {
          */
         public static final String COLUMN_DATE = "date";
 
-//      COMPLETED (4) Create a public static final String call COLUMN_WEATHER_ID with the value "weather_id"
         /* Weather ID as returned by API, used to identify the icon to be used */
         public static final String COLUMN_WEATHER_ID = "weather_id";
 
